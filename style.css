@@ -38,13 +38,13 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .projects, .skills, .contact, footer{
-    font-family: 'Poppins', sans-serif;
+.about, .projects, .skills, .connect, footer{
+    font-family: 'Ubuntu', sans-serif;
 }
 .about .about-content,
 .projects .projects-content,
 .skills .skills-content,
-.contact .contact-content{
+.connect .connect-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -132,7 +132,7 @@ section .title::after{
     color: #fff;
 }
 .navbar ul li a:hover{
-    transition: all 00.06s ease-in-out;
+    transition: all 00.60s ease-in-out;
     border-bottom: 2px solid #00e9a5;
     box-shadow: 5px 10px 30px rgba(0,255,128,0.4);
 }
@@ -175,11 +175,11 @@ section .title::after{
 
 /* Home page */
 .home img{
-    height: 400px;
-    width: 380px;
+    height: 349px;
+    width: 365px;
     position: absolute;
-    left: 64%;
-    top: 25%;
+    left: 63%;
+    top: 30%;
     border-radius: 50%;  
     border-style: ridge; 
     border-left-color: #00e9a5;
@@ -198,7 +198,7 @@ section .title::after{
 
 .home{
     display: flex;
-    background: url("images/banner.jpg") no-repeat center;
+    /* background: url("images/banner.jpg") no-repeat center; */
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -263,7 +263,7 @@ section .title::after{
     width: 45%;
 }
 .about .title{
-    color: #fff;
+    color: rgb(0, 0, 0);
 }
 .about .about-content .left img{
     height: 400px;
@@ -360,12 +360,13 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 
-/* skills section styling */
+/* skills section */
 .skills{
     margin-top: -99px;
 }
 .skills .title::after{
     content: "What I Know";
+    background: rgb(0, 0, 0);
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -374,9 +375,11 @@ section .title::after{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
+    color: #fff;
 }
 .skills .skills-content .left p{
     text-align: justify;
+    color: #fff;
 }
 .skills .skills-content .left a{
     display: inline-block;
@@ -406,11 +409,12 @@ section .title::after{
 .skills .skills-content .right span{
     font-weight: 500;
     font-size: 18px;
+    color: #fff;
 }
 .skills .skills-content .right .line{
     height: 5px;
     width: 100%;
-    background: lightgrey;
+    background: #fff;
     position: relative;
 }
 .skills .skills-content .right .line::before{
@@ -437,44 +441,47 @@ section .title::after{
     width: 75%;
 }
 
-/* contact section styling */
-.contact{
+/* connect section */
+.connect{
     margin-top: -99px;
 }
-.contact .title::after{
+.connect .title::after{
     content: "Get in touch";
 }
-.contact .contact-content .column{
+.connect .connect-content .column{
     width: calc(50% - 30px);
 }
-.contact .contact-content .text{
+.connect .connect-content .text{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
+    color: #fff;
 }
-.contact .contact-content .left p{
+.connect .connect-content .left p{
     text-align: justify;
+    color: #fff;
+    margin-top: 10px;
 }
-.contact .contact-content .left .icons{
+.connect .connect-content .left .icons{
     margin: 10px 0;
 }
-.contact .contact-content .row{
+.connect .connect-content .row{
     display: flex;
     height: 65px;
     align-items: center;
 }
-.contact .contact-content .row .info{
+.connect .connect-content .row .info{
     margin-left: 30px;
 }
-.contact .contact-content .row i{
+.connect .connect-content .row i{
     font-size: 25px;
     color: #00e9a5;
 }
-.contact .contact-content .info .head{
+.connect .connect-content .info .head{
     font-weight: 500;
 }
-.contact .contact-content .info .sub-title{
-    color: #333;
+.connect .connect-content .info .sub-title{
+    color: #fff;
 }
 
 /* footer section styling */
@@ -560,12 +567,12 @@ footer span a:hover{
     .about .about-content .right{
         flex: 100%;
     }
-    .services .projects-content .card{
+    .projects .projects-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
     .skills .skills-content .column,
-    .contact .contact-content .column{
+    .connect .connect-content .column{
         width: 100%;
         margin-bottom: 35px;
     }
@@ -584,7 +591,7 @@ footer span a:hover{
     .home .home-content a{
         font-size: 20px;
     }
-    .services .serv-content .card{
+    .projects .projects-content .card{
         width: 100%;
     }
 }
