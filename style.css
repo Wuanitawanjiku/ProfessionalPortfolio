@@ -198,10 +198,9 @@ section .title::after{
 
 .home{
     display: flex;
-    /* background: url("images/banner.jpg") no-repeat center; */
-    height: 100vh;
+    height: 1vh;
     color: #fff;
-    min-height: 500px;
+    min-height: 10px;
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
@@ -246,13 +245,13 @@ section .title::after{
     color: #00e9a5;
     background: none;
 }
-
 .break{
     width: 100%;
     height: 1px;
     background-color: #00e9a5;
-    margin-top: 600px;
-    margin-left: -1300px;
+    margin-left: -3px;
+    margin-top: 500px;
+    padding-right: 100%;
 }
 
 /* About Me */
@@ -264,6 +263,7 @@ section .title::after{
 }
 .about .title{
     color: rgb(0, 0, 0);
+    margin-top: 45px;
 }
 .about .about-content .left img{
     height: 400px;
@@ -310,6 +310,7 @@ section .title::after{
     background-color: #00e9a5;
     margin-left: -3px;
     margin-top: 120px;
+    padding-right: 100%;
 }
 
 /* projects section styling */
@@ -490,7 +491,7 @@ section .title::after{
     margin-left: 50px
 }
 
-.media ul{
+/* .media ul{
     list-style: none;
     text-decoration: none;
 }
@@ -518,7 +519,7 @@ section .title::after{
     font-size: 45px;
     text-decoration: none;
     margin-left: 50px;
-}
+} */
 
 /* footer section styling */
 footer{
@@ -540,7 +541,28 @@ footer span a:hover{
 @media (max-width: 1104px) {
     .about .about-content .left img{
         height: 350px;
-        width: 350px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1104px) {
+    .home .home-content .home{
+        height: 350px;
+        width: 100%;
+        margin-top: -800px;
+    }
+    .home .home-content .home .image__img{
+        margin-left: -245px;
+        margin-top: 1px;
+    }
+    .break{
+        width: 100%;
+        height: 1px;
+        background-color: #00e9a5;
+        margin-left: -3px;
+        padding-right: 100%;
+        margin-bottom: 1px;
+        margin-top: 100%;
     }
 }
 
@@ -579,6 +601,12 @@ footer span a:hover{
         margin: 20px 0;
         font-size: 25px;
     }
+        
+
+    .home .home-content{
+        margin-top: 60%;
+        width: 100%;
+    }
     .home .home-content .text-2{
         font-size: 70px;
     }
@@ -592,6 +620,10 @@ footer span a:hover{
     .max-width{
         max-width: 930px;
     }
+
+    .about .title{
+        margin-top: -4%;
+    }
     .about .about-content .column{
         width: 100%;
     }
@@ -603,6 +635,8 @@ footer span a:hover{
     .about .about-content .right{
         flex: 100%;
     }
+
+
     .projects .projects-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
