@@ -180,7 +180,7 @@ section .title::after{
     position: absolute;
     left: 63%;
     top: 30%;
-    border-radius: 50%;  
+    border-radius: 100%;  
     border-style: ridge; 
     border-left-color: #00e9a5;
     border-right-color: #00e9a5;
