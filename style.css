@@ -175,7 +175,7 @@ section .title::after{
 
 /* Home page */
 .home img{
-    height: 349px;
+    height: 350px;
     width: 365px;
     position: absolute;
     left: 63%;
@@ -262,7 +262,7 @@ section .title::after{
     width: 45%;
 }
 .about .title{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     margin-top: 45px;
 }
 .about .about-content .left img{
@@ -364,6 +364,7 @@ section .title::after{
 /* skills section */
 .skills{
     margin-top: -99px;
+    color: #ffffff;
 }
 .skills .title::after{
     content: "What I Know";
@@ -445,6 +446,7 @@ section .title::after{
 /* connect section */
 .connect{
     margin-top: -99px;
+    color: #fff;
 }
 .connect .title::after{
     content: "Get in touch";
